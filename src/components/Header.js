@@ -10,6 +10,13 @@ const Header = () => {
   };
 
   const isLogin = false;
+  const showMe = () => {
+    alert("Hello Chris");
+  };
+  const product = [
+    { id: 1, name: "Real Madrid" },
+    { id: 2, name: "Juventus" },
+  ];
 
   return (
     <>
@@ -26,6 +33,17 @@ const Header = () => {
         </>
       )} */}
       {isLogin ? <Logo /> : <p>ไม่มีรูปภาพ</p>}
+      <button onClick={showMe}>Click Here</button>
+      <br />
+      <ul>
+        {product.map((product, index) => {
+          return (
+            <li key={product.id}>
+              {product.name} {index + 1}
+            </li>
+          );
+        })}
+      </ul>
     </>
   );
 };

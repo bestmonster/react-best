@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Footer />
+      <Footer title="Real Madrid" postcode={100900} isOpen />
     </div>
   );
 }

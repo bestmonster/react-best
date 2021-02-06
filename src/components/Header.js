@@ -1,5 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
+import Title from "../style/title/Title";
+import { Button } from "../style/botton/Button";
 
 const Header = () => {
   let companyname = "Best Mint";
@@ -20,7 +22,7 @@ const Header = () => {
 
   return (
     <>
-      <Logo />
+      <Title>Hey Baimint</Title>
       <h1>Hello {companyname}</h1>
       {companyAddress}
       {num + 20} <br />
@@ -33,7 +35,10 @@ const Header = () => {
         </>
       )} */}
       {isLogin ? <Logo /> : <p>ไม่มีรูปภาพ</p>}
-      <button onClick={showMe}>Click Here</button>
+      {/* <button onClick={showMe}>Click Here</button> */}
+      <Button primary onClick={showMe}>
+        Click Me
+      </Button>
       <br />
       <ul>
         {product.map((product, index) => {

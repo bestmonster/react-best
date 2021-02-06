@@ -6,14 +6,20 @@ const Footer = ({ title, postcode, isOpen }) => {
   return (
     <div>
       <hr />
-      <h3>
+      <h3 style={style.title}>
         {title} Copy {new Date().getFullYear()}
       </h3>
-      <p>
+      <p style={{ color: "green" }}>
         {postcode} {isOpen.toString()}
       </p>
     </div>
   );
+};
+
+const style = {
+  title: {
+    color: "red",
+  },
 };
 
 Footer.propTypes = {

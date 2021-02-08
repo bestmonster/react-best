@@ -1,19 +1,25 @@
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Logo from "./components/Logo";
-import Sidebar from "./components/Sidebar";
-import Menu from "./components/Menu";
+import HomePage from "./pages/HomePage";
+import NavBar from "./components/NavBar";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
-    <div className="App">
-      {/* <Logo /> */}
-      {/* <Header /> */}
-      {/* <Footer title="Real Madrid" postcode={100900} isOpen /> */}
-      {/* <Sidebar /> */}
-      <Menu />
-    </div>
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route path="/about">
+          <AboutPage />
+        </Route>
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 

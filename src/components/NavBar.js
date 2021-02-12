@@ -13,16 +13,16 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <>
-      <Navbar bg="primary" expand="lg" variant="dark">
+      <Navbar bg="light" expand="lg" variant="light">
         <NavLink className="navbar-brand" to="/" exact>
-          <img
+          {/* <img
             src="https://react-bootstrap.netlify.app/logo.svg"
             width="30"
             height="30"
             className="d-inline-block align-top"
             alt="React Bootstrap logo"
-          />{" "}
-          SiriRos
+          />{" "} */}
+          MrKumka
         </NavLink>
         {/* <Navbar.Brand href="#home">
           <img

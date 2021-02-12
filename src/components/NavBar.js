@@ -15,13 +15,13 @@ const NavBar = () => {
     <>
       <Navbar bg="light" expand="lg" variant="light">
         <NavLink className="navbar-brand" to="/" exact>
-          {/* <img
+          <img
             src="https://react-bootstrap.netlify.app/logo.svg"
             width="30"
             height="30"
             className="d-inline-block align-top"
             alt="React Bootstrap logo"
-          />{" "} */}
+          />{" "}
           MrKumka
         </NavLink>
         {/* <Navbar.Brand href="#home">
@@ -37,19 +37,22 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <NavLink className="nav-link" to="/" exact activeClassName="active">
-              <IoApertureOutline color="#fff" size="1.5em" /> Home
+              Home
+            </NavLink>
+
+            <NavLink className="nav-link" to="/about" activeClassName="active">
+              About Us
             </NavLink>
 
             <NavLink
               className="nav-link"
-              to="about/"
-              exact
+              to="/product"
               activeClassName="active"
             >
-              About Us
+              Product
             </NavLink>
 
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -59,7 +62,7 @@ const NavBar = () => {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
           <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />

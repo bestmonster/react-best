@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -15,9 +16,14 @@ const HomePage = () => {
               something more unique.
             </p>
             <p>
-              <a className="btn btn-primary btn-lg" href="#" role="button">
-                Learn more »
-              </a>
+              <Link
+                to="/product"
+                className="btn btn-primary btn-lg"
+                href="#"
+                role="button"
+              >
+                All Couse »
+              </Link>
             </p>
           </div>
         </div>
